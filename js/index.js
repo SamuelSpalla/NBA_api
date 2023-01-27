@@ -48,6 +48,8 @@ const mainNBA = async () =>{
             timesLogo.setAttribute('id', chave.Key);
             section.appendChild(timesLogo)
 
+            main.innerHTML = 'Escolha um time'
+
             timesLogo .addEventListener('click', ()=>{
                 timeNBA(timesLogo.id, chave.WikipediaLogoUrl, chave.City, chave.Conference, chave.Name, chave.TeamID)
             })
@@ -80,7 +82,7 @@ const timeNBA = async (team, teamImg, city, conf, Nome, ID) =>{
     console.log(data)
     console.log(dataStats)
     main.innerHTML = ''
-    
+
     if(data){  
         const times = document.createElement('div')
         times.classList.add('main-times')

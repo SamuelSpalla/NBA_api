@@ -63,6 +63,9 @@ body{
     display: flex;
     justify-content: space-around;
     margin-top: 2rem;
+
+    font-size: 3rem;
+    color: white;
 }
 
 
@@ -92,6 +95,8 @@ body{
 .main .main-players h2 {
     color: white;
     font-size: 3rem;
+
+    border-bottom: 2px solid white;
 }
 
 .main .main-players .players .infosplayer{
@@ -104,4 +109,8 @@ body{
 .main .main-players .players .infosplayer img{
     max-width: 80px;
     margin-bottom: 5%;
+}
+
+.main .main-players .players .infosplayer span{
+    font-size: 1.2rem;
 }
